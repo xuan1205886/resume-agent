@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# Environment
+.env
+
+# Root-level Node (frontend owns its own)
+node_modules/
+package.json
+package-lock.json
+
+# Temp
+*test_resume.pdf
+pages/
+
+# Chroma
+chroma_db/
+
+# Data
+data/uploads/*
+!data/uploads/.gitkeep
+data/history.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/.env*.local
+
+# Claude Code
+.claude/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

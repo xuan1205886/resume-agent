@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Backend Engineer",
+    "keywords": "Python, Django, Flask, FastAPI, Go, Java, Spring Boot, Node.js, REST API, GraphQL, gRPC, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Docker, Kubernetes, AWS, GCP, Azure, CI/CD, GitHub Actions, Jenkins, Kafka, RabbitMQ, 微服务, 分布式系统, 系统设计, 单元测试, TDD, SQL优化, 性能优化, 并发编程, 异步编程, Linux, Shell"
+  },
+  {
+    "role": "AI/ML Engineer",
+    "keywords": "Python, PyTorch, TensorFlow, Transformers, LangChain, LlamaIndex, RAG, Agent, LLM, NLP, Computer Vision, ChromaDB, Pinecone, Milvus, Embedding, Fine-tuning, Prompt Engineering, FastAPI, Docker, MLflow, Weights & Biases, MLOps, Scikit-learn, Pandas, NumPy, 深度学习, 机器学习, 模型部署, ONNX, TensorRT, GPU, CUDA"
+  },
+  {
+    "role": "Full Stack Engineer",
+    "keywords": "React, Vue, Angular, TypeScript, JavaScript, HTML5, CSS3, Next.js, Node.js, Python, GraphQL, REST API, PostgreSQL, MongoDB, Docker, AWS, Git, CI/CD, Redux, Zustand, Tailwind CSS, Webpack, Vite, 响应式设计, 前端性能优化, SEO, 跨浏览器兼容"
+  },
+  {
+    "role": "Data Engineer",
+    "keywords": "SQL, Python, PySpark, Spark, Airflow, Dagster, dbt, Kafka, Flink, ETL, ELT, Data Warehouse, Data Lake, Snowflake, BigQuery, Redshift, Databricks, AWS, GCP, Azure, Hadoop, Hive, Presto, Trino, 数据建模, 数据治理, 数据质量, CDC, 实时计算, 批处理"
+  },
+  {
+    "role": "DevOps/SRE",
+    "keywords": "Linux, Docker, Kubernetes, Terraform, Ansible, Jenkins, GitHub Actions, GitLab CI, ArgoCD, Prometheus, Grafana, ELK, Datadog, AWS, GCP, Azure, Nginx, HAProxy, Istio, 监控告警, 日志管理, 灾备, 高可用, 安全合规, FinOps, GitOps"
+  },
+  {
+    "role": "AI应用开发",
+    "keywords": "Python, FastAPI, Streamlit, LangChain, LangGraph, LlamaIndex, RAG, Agent, LLM, DeepSeek, OpenAI API, ChromaDB, Pinecone, Embedding, BGE, Sentence Transformers, Reranker, Prompt Engineering, Function Calling, Tool Use, Docker, Git, API设计, 向量检索, 语义搜索, 知识库"
+  }
+]

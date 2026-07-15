@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Backend Engineer",
+    "skills": [
+      {"name": "Python", "category": "hard", "description": "Python 后端开发：Django、Flask、FastAPI 框架，异步编程(asyncio)，RESTful API 设计", "ats_keywords": ["python", "django", "flask", "fastapi", "pytest", "asyncio", "celery"]},
+      {"name": "数据库设计", "category": "hard", "description": "关系型数据库(PostgreSQL、MySQL)与非关系型数据库(MongoDB、Redis)的设计与优化。SQL优化、索引策略、读写分离", "ats_keywords": ["sql", "postgresql", "mysql", "mongodb", "redis", "database design", "orm"]},
+      {"name": "API 设计", "category": "hard", "description": "RESTful API 设计原则、GraphQL、gRPC。OpenAPI/Swagger 文档、版本管理、认证授权", "ats_keywords": ["rest api", "graphql", "grpc", "swagger", "openapi", "jwt", "oauth2"]},
+      {"name": "系统设计", "category": "hard", "description": "分布式系统设计：微服务架构、消息队列(Kafka/RabbitMQ)、负载均衡、缓存策略", "ats_keywords": ["system design", "microservices", "kafka", "rabbitmq", "load balancing", "caching"]},
+      {"name": "Docker/K8s", "category": "tool", "description": "容器化与编排：Docker 镜像构建、docker-compose 多服务编排、Kubernetes 集群管理", "ats_keywords": ["docker", "kubernetes", "k8s", "container", "devops"]},
+      {"name": "CI/CD", "category": "tool", "description": "持续集成与部署：GitHub Actions、Jenkins、GitLab CI。自动化测试、构建、部署流水线", "ats_keywords": ["ci/cd", "github actions", "jenkins", "gitlab ci", "automation"]},
+      {"name": "Git 版本控制", "category": "tool", "description": "Git 分支策略(GitFlow/Trunk-Based)、代码审查(Code Review)、Pull Request 流程", "ats_keywords": ["git", "github", "code review", "branch strategy"]},
+      {"name": "单元测试", "category": "hard", "description": "测试驱动开发(TDD)、pytest/unittest、集成测试、端到端测试。测试覆盖率管理", "ats_keywords": ["unit testing", "pytest", "tdd", "integration test", "coverage"]},
+      {"name": "问题解决能力", "category": "soft", "description": "独立排查复杂技术问题、根因分析、性能调优", "ats_keywords": ["problem solving", "debugging", "performance optimization", "troubleshooting"]},
+      {"name": "团队协作", "category": "soft", "description": "跨团队沟通、技术方案评审、技术文档撰写、知识分享", "ats_keywords": ["teamwork", "communication", "documentation", "code review"]}
+    ]
+  },
+  {
+    "role": "AI/ML Engineer",
+    "skills": [
+      {"name": "Python", "category": "hard", "description": "Python 数据科学生态：NumPy、Pandas、Scikit-learn、PyTorch/TensorFlow", "ats_keywords": ["python", "numpy", "pandas", "scikit-learn", "pytorch", "tensorflow"]},
+      {"name": "LLM/RAG", "category": "hard", "description": "大语言模型应用开发：LangChain、LlamaIndex、RAG架构、Agent开发、Prompt Engineering", "ats_keywords": ["llm", "rag", "langchain", "llamaindex", "agent", "prompt engineering", "vector database"]},
+      {"name": "向量数据库", "category": "tool", "description": "Chroma、Pinecone、Weaviate、Milvus 等向量数据库的使用与优化", "ats_keywords": ["chromadb", "pinecone", "weaviate", "milvus", "vector search"]},
+      {"name": "模型部署", "category": "hard", "description": "模型服务化(FastAPI/Flask)、模型优化(ONNX/TensorRT)、GPU推理优化", "ats_keywords": ["model deployment", "fastapi", "onnx", "tensorrt", "inference"]},
+      {"name": "数据处理", "category": "hard", "description": "ETL流水线设计、数据清洗、特征工程、大规模数据处理(Spark/Ray)", "ats_keywords": ["data processing", "etl", "feature engineering", "spark", "ray"]},
+      {"name": "MLOps", "category": "hard", "description": "模型版本管理、实验追踪(MLflow/Weights & Biases)、模型监控", "ats_keywords": ["mlops", "mlflow", "wandb", "model monitoring"]},
+      {"name": "SQL", "category": "hard", "description": "复杂SQL查询、窗口函数、查询优化、数据建模", "ats_keywords": ["sql", "query optimization", "data modeling"]},
+      {"name": "算法基础", "category": "hard", "description": "数据结构与算法、机器学习算法原理、深度学习基础", "ats_keywords": ["algorithms", "machine learning", "deep learning", "nlp", "computer vision"]}
+    ]
+  },
+  {
+    "role": "Full Stack Engineer",
+    "skills": [
+      {"name": "前端框架", "category": "hard", "description": "React/Vue/Angular 至少精通一个。组件化开发、状态管理(Redux/Pinia)、性能优化", "ats_keywords": ["react", "vue", "angular", "javascript", "typescript", "html", "css"]},
+      {"name": "后端开发", "category": "hard", "description": "Node.js/Python/Go 后端开发。API设计、数据库操作、认证授权", "ats_keywords": ["node.js", "python", "go", "api", "backend"]},
+      {"name": "数据库", "category": "hard", "description": "SQL与NoSQL数据库的使用。数据建模、查询优化", "ats_keywords": ["sql", "mongodb", "postgresql", "mysql", "redis"]},
+      {"name": "DevOps基础", "category": "tool", "description": "CI/CD流水线、Docker容器化、云服务(AWS/GCP/Azure)基础", "ats_keywords": ["docker", "ci/cd", "aws", "gcp", "azure"]},
+      {"name": "全栈思维", "category": "soft", "description": "端到端产品思维、用户体验意识、前后端协作能力", "ats_keywords": ["full stack", "product thinking", "ux awareness"]}
+    ]
+  },
+  {
+    "role": "Data Engineer",
+    "skills": [
+      {"name": "SQL", "category": "hard", "description": "高级SQL：复杂查询、窗口函数、CTE、查询优化、数据建模", "ats_keywords": ["sql", "postgresql", "bigquery", "snowflake", "dbt"]},
+      {"name": "Python/Spark", "category": "hard", "description": "PySpark/Spark SQL 大数据处理。Airflow/Dagster 工作流编排", "ats_keywords": ["python", "pyspark", "spark", "airflow", "dagster"]},
+      {"name": "ETL/ELT", "category": "hard", "description": "数据管道设计与实现。数据质量监控、增量处理、CDC", "ats_keywords": ["etl", "elt", "data pipeline", "data quality", "cdc"]},
+      {"name": "数据仓库", "category": "hard", "description": "数据仓库设计(星型/雪花模型)、数据湖架构、湖仓一体", "ats_keywords": ["data warehouse", "data lake", "dimensional modeling", "star schema"]},
+      {"name": "云平台", "category": "tool", "description": "AWS/GCP/Azure 数据服务：S3、Redshift、BigQuery、Databricks", "ats_keywords": ["aws", "gcp", "azure", "s3", "redshift", "bigquery", "databricks"]}
+    ]
+  }
+]

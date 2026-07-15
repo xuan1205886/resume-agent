@@ -1,0 +1,79 @@
+# AI简历优化Agent - 全局配置
+
+# LLM 配置
+llm:
+  provider: deepseek       # deepseek | openai | anthropic | ollama
+  model: deepseek-chat
+  api_key_env: DEEPSEEK_API_KEY
+  base_url: https://api.deepseek.com
+  temperature: 0.3
+  max_tokens: 2048          # 默认 token 上限
+  request_timeout: 30       # 单次 API 调用超时（秒），快速失败
+  max_retries: 2            # 失败重试次数（减少等待时间）
+  # 各 Agent 独立 token 上限（用于生成大段文本的 Agent 需要更多）
+  agent_max_tokens:
+    jd_analyzer: 1024
+    resume_parser: 1024
+    skill_matcher: 1024
+    suggestions: 1536
+    bullet_reorder: 512
+    resume_assembly: 4096    # 合并调用需同时输出建议JSON+简历Markdown
+    fact_check: 2048         # 核查报告含多条 verdict，需要更多 token
+    interview_gen: 2048      # 10道面试题 JSON，至少 1500+ token
+    learning_plan: 1536
+
+# Agent 流水线配置
+agent:
+  pipeline_mode: "parallel"  # "parallel" | "sequential"（串行模式用于调试回退）
+  enable_fact_check: true    # 是否启用事实核查（关闭可加速 ~8s）
+
+# Embedding 配置
+embedding:
+  model_name: paraphrase-multilingual-MiniLM-L12-v2
+  device: cpu
+  batch_size: 16
+
+# 检索配置
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.3
+  persist_dir: ./chroma_db
+
+# Reranker 配置
+reranker:
+  model_name: BAAI/bge-reranker-base
+  batch_size: 8
+  device: cpu
+
+# 知识库配置
+knowledge_base:
+  persist_dir: ./chroma_db
+  collection_skill_taxonomy: ro_skill_taxonomy
+  collection_best_practices: ro_best_practices
+  collection_ats_keywords: ro_ats_keywords
+  data_dir: ./data/kb
+
+# 服务器配置
+server:
+  host: "0.0.0.0"
+  port: 8765
+  # API Key 鉴权（为空则不启用鉴权，开发环境可留空。生产环境务必设置！）
+  api_key: ""
+  # CORS 允许的来源（生产环境请替换为实际域名）
+  cors_origins:
+    - "http://localhost:8501"
+    - "http://localhost:8502"
+    - "http://localhost:3000"
+  # 速率限制（每个 IP 每分钟最大请求数，0 表示不限制）
+  rate_limit_per_minute: 30
+
+# 简历解析配置
+resume:
+  max_pages: 5           # 最多解析前5页
+  min_text_length: 100   # 低于此长度视为解析失败
+
+# 评测配置
+eval:
+  test_cases_path: ./data/eval/test_cases.json
+  output_path: ./data/eval/results.json
+  eval_model: deepseek-chat
